@@ -1,5 +1,5 @@
 import Cell from "./Cells/Cells.js";
-import GridWorld from "./gridWorld/GridWorld.js";
+import GridWorld from "./GridWorld/GridWorld.js";
 
 const cellLength = 10;
 
