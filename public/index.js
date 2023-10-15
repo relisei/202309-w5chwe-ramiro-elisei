@@ -1,12 +1,13 @@
-import Cell from "./Cells/Cells.js";
 import GridWorld from "./GridWorld/GridWorld.js";
 
-const cellLength = 10;
+const gridWorld = new GridWorld();
 
-const cell = new Cell(false);
-const gridWorld = new GridWorld(cell);
+gridWorld.initCell(3, false);
 
-console.log(cell);
-console.log(gridWorld);
+gridWorld.cell[1][1].reBirth();
+gridWorld.cell[2][0].reBirth();
+gridWorld.cell[2][1].reBirth();
 
-gridWorld.initCell(cellLength);
+gridWorld.countNeighbours(0, 2);
+
+console.log(gridWorld.cell[0][2].neigbours);

@@ -1,8 +1,13 @@
 class Cell {
   isAlive;
+  neigbours;
 
   constructor(isAlive) {
     this.isAlive = isAlive;
+  }
+
+  state() {
+    return this.isAlive;
   }
 
   die() {
